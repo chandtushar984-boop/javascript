@@ -39,6 +39,42 @@
 //     console.log("Form Submitted")})
 
 
-const container=document.querySelector('.container')
-const outer=document.querySelector('.outer')
-const button=document.querySelector('button')
+// const container=document.querySelector('.container')
+// const outer=document.querySelector('.outer')
+// const button=document.querySelector('button')
+
+// console.log(b)
+
+// let a=2534;
+// var b=5674;
+// console.log(a)
+// console.log(b)
+ 
+// function print(){
+//     conosle.log("inside fn");
+// }
+
+//  print()
+
+
+ function first(){
+    second()
+ }
+ function second(){
+    third()
+}
+function third(){
+    console.trace()
+}
+first()
+function infinite(){
+    infinite()
+}
+infinite()
+
+let total=40:
+function calculate(){
+    console.log(total)
+    let total=199
+}
+calculate()
