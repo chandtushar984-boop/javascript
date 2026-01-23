@@ -78,3 +78,5 @@ function calculate(){
     let total=199
 }
 calculate()
+let a=10;
+console.log(a)
