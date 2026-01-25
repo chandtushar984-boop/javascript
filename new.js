@@ -72,11 +72,8 @@ function infinite(){
 }
 infinite()
 
-let total=40:
+let total=40;
 function calculate(){
     console.log(total)
     let total=199
 }
-calculate()
-let a=10;
-console.log(a)
