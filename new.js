@@ -57,23 +57,28 @@
 //  print()
 
 
- function first(){
-    second()
- }
- function second(){
-    third()
-}
-function third(){
-    console.trace()
-}
-first()
-function infinite(){
-    infinite()
-}
-infinite()
+//  function first(){
+//     second()
+//  }
+//  function second(){
+//     third()
+// }
+// function third(){
+//     console.trace()
+// }
+// first()
+// function infinite(){
+//     infinite()
+// }
+// infinite()
 
-let total=40;
-function calculate(){
-    console.log(total)
-    let total=199
-}
+// let total=40;
+// function calculate(){
+//     console.log(total)
+//     let total=199
+// }
+
+
+console.log("first line")
+console.log("second line")
+setTimeout(()=>{console.log("after 2 second")},2000)
