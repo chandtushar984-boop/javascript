@@ -79,6 +79,58 @@
 // }
 
 
-console.log("first line")
-console.log("second line")
-setTimeout(()=>{console.log("after 2 second")},2000)
+// console.log("first line")
+// console.log("second line")
+// setTimeout(()=>{console.log("after 2 second")},2000)
+
+// setTimeout(()=>{
+//     alert("line after 2 second")
+// },2*1000)
+
+// setInterval(()=>{
+//     console.log("set interval")
+// },1000)
+
+// const timerID=setInterval(()=>{
+//     console.log("set interval")
+// },1000)
+// const timeoutID=setTimeout(()=>{
+//     clearInterval(timerID)node 
+// },1000)
+
+// var a=1;
+// let b=10; 
+// const timerID=setTimeout(()=>{
+//     console.log(a)
+//     a++;
+
+// },1000)
+// const timeroutID=setInterval(()=>{
+//     console.log("")
+// })
+
+// let num=1;
+// const id=setInterval(()=>{
+//     if(num===10)clearInterval(id)
+//     console.log(num)
+//     num++
+// },1000)
+
+const name=document.querySelector("#name")
+const btn=document.querySelector(".btn")
+const list=document.querySelector(".list")
+btn.addEventListener('click',()=>{
+    const li=document.createElement('li')
+    const dlt=document.createElement("button")
+    dlt.innerText="Delete";
+    li.innerText=name.value;
+    list.appendChild(li)
+    dlt.addEventListener("click",()=>{
+        list.removeChild(li)
+    })
+    le.appendChild(dlt)
+    list.appendChild(li)
+
+
+    name.value=""
+})
