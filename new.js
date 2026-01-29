@@ -135,3 +135,17 @@
 //     list.appendChild(li)
 //     name.value=""
 // })
+
+// console.log("first line")
+setTimeout(()=>{
+    console.log("after 5 sec")},5000)
+console.log("second line")
+
+function print(num){
+    console.log("insdide print")
+        num()
+}
+function sample(){
+    console.log("inside callback")
+}
+print(sample)
