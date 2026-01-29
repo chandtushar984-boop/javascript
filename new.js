@@ -116,21 +116,22 @@
 //     num++
 // },1000)
 
-const name=document.querySelector("#name")
-const btn=document.querySelector(".btn")
-const list=document.querySelector(".list")
-btn.addEventListener('click',()=>{
-    const li=document.createElement('li')
-    const dlt=document.createElement("button")
-    dlt.innerText="Delete";
-    li.innerText=name.value;
-    list.appendChild(li)
-    dlt.addEventListener("click",()=>{
-        list.removeChild(li)
-    })
-    le.appendChild(dlt)
-    list.appendChild(li)
-
-
-    name.value=""
-})
+// const name=document.querySelector("#name")
+// const btn=document.querySelector(".btn")
+// const list=document.querySelector(".list")
+// btn.addEventListener('click',()=>{
+//     if(name.value===''){alert("enter the name")
+//         return;
+//     }
+//     const li=document.createElement('li')
+//     const dlt=document.createElement("button")
+//     dlt.innerText="Delete";
+//     li.innerText=name.value;
+//     list.appendChild(li)
+//     dlt.addEventListener("click",()=>{
+//         list.removeChild(li)
+//     })
+//     le.appendChild(dlt)
+//     list.appendChild(li)
+//     name.value=""
+// })
