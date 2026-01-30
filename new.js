@@ -137,15 +137,32 @@
 // })
 
 // console.log("first line")
-setTimeout(()=>{
-    console.log("after 5 sec")},5000)
-console.log("second line")
+// setTimeout(()=>{
+//     console.log("after 5 sec")},5000)
+// console.log("second line")
 
-function print(num){
-    console.log("insdide print")
-        num()
-}
-function sample(){
-    console.log("inside callback")
-}
-print(sample)
+// function print(num){
+//     console.log("insdide print")
+//         num()
+// }
+// function sample(){
+//     console.log("inside callback")
+// }
+// print(sample)
+
+
+console.log("starting homework");
+setTimeout(()=>{
+    console.log('homewoek done!');
+    console.log('starting dinner');
+
+    setTimeout(()=>{
+        console.log('dinner done');
+        console.log("getting ready to go out");
+        
+        setTimeout(()=>{
+            console.log('going to the playground');
+        },1000);
+
+    },1500);
+},2000);
