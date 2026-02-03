@@ -166,3 +166,16 @@
 
 //     },1500);
 // },2000);
+
+function finishHomework(callback){
+    console.log("starting homework...");
+    setTimeout(()=>{
+        console.log("homework done");
+        callback();
+    },2000);
+}
+
+function eatDinnera(callback){
+    console.log("starting dinner")
+    setTimeout
+}
