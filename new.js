@@ -151,21 +151,18 @@
 // print(sample)
 
 
-console.log("starting homework");
-setTimeout(()=>{
-    console.log('homewoek done!');
-    console.log('starting dinner');
+// console.log("starting homework");
+// setTimeout(()=>{
+//     console.log('homewoek done!');
+//     console.log('starting dinner');
 
-    setTimeout(()=>{
-        console.log('dinner done');
-        console.log("getting ready to go out");
+//     setTimeout(()=>{
+//         console.log('dinner done');
+//         console.log("getting ready to go out");
         
-        setTimeout(()=>{
-            console.log('going to the playground');
-        },1000);
+//         setTimeout(()=>{
+//             console.log('going to the playground');
+//         },1000);
 
-    },1500);
-},2000);
-
-
-console.log("hello")
+//     },1500);
+// },2000);
