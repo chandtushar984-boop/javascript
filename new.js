@@ -167,15 +167,49 @@
 //     },1500);
 // },2000);
 
-function finishHomework(callback){
-    console.log("starting homework...");
+// function finishHomework(callback){
+//     console.log("starting homework...");
+//     setTimeout(()=>{
+//         console.log("homework done");
+//         callback();
+//     },2000);
+// }
+
+// function eatDinnera(callback){
+//     console.log("starting dinner")
+//     setTimeout
+// }
+
+const p=new Promise((res,rej)=>{
+    let done=true;
     setTimeout(()=>{
-        console.log("homework done");
-        callback();
-    },2000);
+        if(done){
+            res({name:"anand",age:34})
+
+        }else{
+            rej("work has not been completed")
+        }
+        // reject
+    },5000)
+})
+p.then((data)=>{
+    console.log(data.name)
+}).catch((err)=>{
+    console.log(err)
+
+}).finally(()=>{
+    console.log("finally block")
+})
+
+function doHomework(){
+    const p=new Promise((res,rej)=>{
+        let done=true;
+        setTimeout(()=>{
+            console.log("homework completed")
+            res("homework is done")
+        }else{
+            rej("homework not completed")
+        })
+    })
 }
 
-function eatDinnera(callback){
-    console.log("starting dinner")
-    setTimeout
-}
