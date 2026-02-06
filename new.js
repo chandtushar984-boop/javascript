@@ -180,18 +180,18 @@
 //     setTimeout
 // }
 
-const p=new Promise((res,rej)=>{
-    let done=true;
-    setTimeout(()=>{
-        if(done){
-            res({name:"anand",age:34})
+// const p=new Promise((res,rej)=>{
+//     let done=true;
+//     setTimeout(()=>{
+//         if(done){
+//             res({name:"anand",age:34})
 
-        }else{
-            rej("work has not been completed")
-        }
-        // reject
-    },5000)
-})
+//         }else{
+//             rej("work has not been completed")
+//         }
+//         // reject
+//     },5000)
+// })
 p.then((data)=>{
     console.log(data.name)
 }).catch((err)=>{
