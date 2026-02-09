@@ -200,9 +200,6 @@ p.then((data)=>{
 }).finally(()=>{
     console.log("finally block")
 })
-
-
-
 function doHomework(){
     const p=new Promise((res,rej)=>{
         let done=true;
