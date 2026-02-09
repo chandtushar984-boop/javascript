@@ -206,7 +206,8 @@ function doHomework(){
         setTimeout(()=>{
             console.log("homework completed")
             res("homework is done")
-        }else{
+        }
+        else{
             rej("homework not completed")
         })
     })
