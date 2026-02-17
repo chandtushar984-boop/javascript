@@ -192,23 +192,37 @@
 //         // reject
 //     },5000)
 // })
-p.then((data)=>{
-    console.log(data.name)
-}).catch((err)=>{
-    console.log(err)
+// p.then((data)=>{
+//     console.log(data.name)
+// }).catch((err)=>{
+//     console.log(err)
 
-}).finally(()=>{
-    console.log("finally block")
-})
-function doHomework(){
-    const p=new Promise((res,rej)=>{
-        let done=true;
-        setTimeout(()=>{
-            console.log("homework completed")
-            res("homework is done")
-        }
-        else{
-            rej("homework not completed")
-        })
-    })
+// }).finally(()=>{
+//     console.log("finally block")
+// })
+// function doHomework(){
+//     const p=new Promise((res,rej)=>{
+//         let done=true;
+//         setTimeout(()=>{
+//             console.log("homework completed")
+//             res("homework is done")
+//         }
+//         else{
+//             rej("homework not completed")
+//         })
+//     })
+// }
+
+console.log('first line')
+try{
+    console.log(sample)
+    console.log("line after sample")
+    let age=16
+    if(age<18){
+        throw new Error("you are minor")
+    }
+}catch(e){
+    console.log(e)
+    console.log("hello we got an error")
 }
+console.log("last line")
