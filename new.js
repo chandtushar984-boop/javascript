@@ -213,16 +213,26 @@
 //     })
 // }
 
-console.log('first line')
-try{
-    console.log(sample)
-    console.log("line after sample")
-    let age=16
-    if(age<18){
-        throw new Error("you are minor")
-    }
-}catch(e){
-    console.log(e)
-    console.log("hello we got an error")
-}
-console.log("last line")
+// console.log('first line')
+// try{
+//     console.log(sample)
+//     console.log("line after sample")
+//     let age=16
+//     if(age<18){
+//         throw new Error("you are minor")
+//     }
+// }catch(e){
+//     console.log(e)
+//     console.log("hello we got an error")
+// }
+// console.log("last line")
+
+localStorage.setItem("name","John")
+localStorage.set("age",23)
+
+const uname=localStorage.getItem("name")
+console.log(uname)
+console.log(localStorage.getItem("age"))
+
+localStorage.removeItem("name")
+localStorage.clear()
