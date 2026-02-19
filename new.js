@@ -227,12 +227,30 @@
 // }
 // console.log("last line")
 
-localStorage.setItem("name","John")
-localStorage.set("age",23)
+// localStorage.setItem("name","John")
+// localStorage.set("age",23)
 
-const uname=localStorage.getItem("name")
-console.log(uname)
-console.log(localStorage.getItem("age"))
+// const uname=localStorage.getItem("name")
+// console.log(uname)
+// console.log(localStorage.getItem("age"))
 
-localStorage.removeItem("name")
-localStorage.clear()
+// localStorage.removeItem("name")
+// localStorage.clear()
+
+// sessionStorage.setItem("name","Mia")
+// sessionStorage.set("age",14)
+
+// const uname=sessionStorage.getItem('name')
+// console.log(uname)
+// console.log(sessionStorage.getItem('age'))
+
+// sessionStorage.removeItem("name")
+
+document.cookie='name=Mia; expires=Thu, 20 Feb 2026 12:00:00 UTC;'
+document.cookie="age=12; expires=Thu, 20 Feb 2026 12:00:00m UTC;"
+console.log(document,cookie)
+
+async function fetchData(){
+    await fetch("http://127.0.0.1:3000/index.html")
+}
+fetch Data()
